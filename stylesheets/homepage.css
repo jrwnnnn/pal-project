@@ -7,11 +7,6 @@
     src: url(../assets/fonts/product_sans.ttf);
 }
 body {
-    background-image: url(https://www.philippineairlines.com/en/newsevent-listingpage/press-releases-statements/-/media/10efa199f02f41808e6e1939dfc831d3.ashx?h=450&w=600);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-    /*display: flex;*/
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -58,7 +53,14 @@ a.nav_link {
 a.nav_link:hover {
     text-decoration: underline;
 }
-
+.top_section {
+    background-image: url(https://www.philippineairlines.com/en/newsevent-listingpage/press-releases-statements/-/media/10efa199f02f41808e6e1939dfc831d3.ashx?h=450&w=600);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+}
 div.main_body {
     padding: 0 15vw;
 }
@@ -67,6 +69,7 @@ div.main_body {
     font-family: Bahnschrift,  sans-serif;
     font-size: 3.4rem;
     text-align: center;
+    margin: 0;
 }
 .subheading {
     font-family: Product Sans, sans-serif;
