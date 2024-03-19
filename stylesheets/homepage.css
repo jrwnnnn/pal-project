@@ -6,6 +6,7 @@
     font-family: Product Sans;
     src: url(../assets/fonts/product_sans.ttf);
 }
+
 body {
     justify-content: center;
     align-items: center;
@@ -53,16 +54,31 @@ a.nav_link {
 a.nav_link:hover {
     text-decoration: underline;
 }
+
+div.body_padding {
+    padding: 0 15vw;
+}
+@media screen and (max-width: 500px) {
+    div.body_padding {
+        padding: 0 6vw;
+    }
+}
+
 .top_section {
     background-image: url(https://www.philippineairlines.com/en/newsevent-listingpage/press-releases-statements/-/media/10efa199f02f41808e6e1939dfc831d3.ashx?h=450&w=600);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    margin: 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
 }
-div.main_body {
-    padding: 0 15vw;
+@media screen and (max-width: 900px) {
+    .top_section {
+        padding: 5vh 0;
+        height: auto;
+    }
 }
 
 .heading {
@@ -76,8 +92,6 @@ div.main_body {
     font-size: 1.25rem;
     text-align: center;
 }
-
-/* Find Flight Home */
 
 .find_flight_container {
     background-color: #FFFFFF;
@@ -141,9 +155,122 @@ div.main_body {
     .find_flight_form_button {
         grid-column: span 1;
     }
-  }
-@media screen and (max-width: 500px) {
-    div.main_body {
-        padding: 0 5vw;
+}
+
+.discover_ph {
+    display: grid;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.discover_ph video {
+    width: 100%;
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+.discover_ph .body_padding {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+.discover_ph_text {
+    letter-spacing: .5rem;
+    font-size: 1.75rem;
+    justify-self: center;
+}
+
+.discover_manila,
+.discover_boracay,
+.discover_cebu {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+/* @media screen and (max-width: 900px) {
+    .discover_manila {
+        padding: 5vh 0;
     }
+} */
+.discover_manila {
+    background-image: url(https://www.colliers.com/-/media/images/colliers/asia/philippines/colliers-review/collierreview_hero_image_01312022_v2/hero_image_tondominium/hero_image_021522/hero_image_colliersviewpoint_022222/meaningfulinsight_hero_image_022322/hero_image_colliersvp_030122.ashx?bid=7b3d795cd9b248f8a8120bcc0208df40&h=1040&w=1536&hash=EC84E20F69FBFC7CC9066AC14E2A9538);
+}
+.discover_boracay {
+    background-image: url(https://a.cdn-hotels.com/gdcs/production5/d320/a0c5a994-d99a-4278-a1b1-8a3b652461ac.jpg);
+}
+.discover_cebu {
+    background-image: url(https://a.travel-assets.com/findyours-php/viewfinder/images/res70/129000/129096-Cebu.jpg);
+}
+.discover_text_container {
+    display: grid;
+    /* grid-template-rows: repeat(3, 1fr); */
+}
+.discover_text_header {
+    font-family: Bahnschrift;
+    font-size: 3.4rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+.discover_text_subheader {
+    font-family: Product Sans;
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0;
+}
+.discover_button {
+    justify-self: center;
+    color: #FFFFFF;
+    background-color: #042B67;
+    border: none;
+    border-radius: .40rem;
+    font-family: Product Sans;
+    font-size: 1rem;
+    padding: .5rem 6vw;
+    margin-top: 10vh;
+    cursor: pointer;
+}
+.discover_button:hover {
+    background-color: #0645a3;
+}
+
+.video_section {
+    background-image: url(https://freeware.aerosoft.com/forum/screenshots/monthly_08_2020/4.jpg.f3c8797247d00415ccf7b3fe3e3f9a79.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    /* height: 100vh; */
+    align-items: center;
+    padding: 10vh 0;
+}
+.video_section div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.video_section div img {
+    width: 50vw;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+.video_section div p[class="video_section_text_heading"] {
+    font-family: Bahnschrift;
+    font-size: 1.80rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+.video_section div p[class="video_section_text_subheading"] {
+    font-family: Product Sans;
+    font-size: 1.10rem;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+.video_section div video {
+    width: 100%;
+    border-radius: .5rem;
 }
