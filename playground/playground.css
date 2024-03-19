@@ -1,0 +1,53 @@
+.main_body {
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+div.find_flight {
+    font-size: 18px;
+    padding: 25px 20px;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    margin: 100px auto 200px auto;
+}
+.row_one {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.route {
+    display: flex;
+    width: 100%;
+}
+.passenger {
+    display: flex;
+    width: 30%;
+    align-items: center;
+}
+.input_set {
+    width: 100%;
+    margin: auto 5px auto 5px;
+}
+.input_set label {
+    display: block;
+    text-align: left;
+}
+.input_set select {
+    display: flex;
+    width: 100%;
+}
+.input_set input {
+    display: flex;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .row_one {
+        flex-wrap: wrap;
+    }
+    .route {
+        flex-wrap: wrap;
+    }
+    .passenger {
+        width: 100%;
+    }
+  }

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Booking</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(https://cloudfront-us-east-2.images.arcpublishing.com/reuters/Q2TXDVIDXBKSPIQEKQC6USDU7A.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #003a63;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #003a63;
+            font-weight: bold;
+        }
+        select, input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        input[type="date"] {
+            width: calc(100% - 18px);
+        }
+        input[type="submit"] {
+            background-color: #003a63;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #002b48;
+        }
+
+        p, a {
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Flight Booking</h1>
+        <p>Please book your flight 3 days before the target departure. <a href="https://www.philippineairlines.com/about-us/legal-notices/data-privacy-policy" target="_parent">Privacy Policy</a></p>
+        <form action="flight_found.html" target="body">
+            <label for="from">Departing from</label>
+            <select name="from" required>
+                <option>Manila (MNL)</option>
+                <option>Abu Dhabi (AUH)</option>
+                <option>Bacolod City (BCD)</option>
+                <option>Bangkok (BKK)</option>
+                <option>Basco (BSO)</option>
+                <option>Busuanga (USU)</option>
+                <option>Butuan (BXU)</option>
+                <option>Cagayan De Oro (CGY)</option>
+                <option>Catarman (CRM)</option>
+                <option>Caticlan (MPH)</option>
+                <option>Cebu (CEB)</option>
+                <option>Davao City (DVO)</option>
+                <option>Denpasar (DPS)</option>
+                <option>Dipolog (DPL)</option>
+                <option>Dubai (DXB)</option>
+                <option>General Santos (GES)</option>
+                <option>Guam (GUM)</option>
+                <option>Hong Kong (HKG)</option>
+                <option>Iloilo (ILO)</option>
+                <option>Jakarta (JRK)</option>
+                <option>Kalibo (KLO)</option>
+                <option>Kuala Lumpur (KUL)</option>
+                <option>Kuwait City (KWI)</option>
+                <option>Legazpi (DRP)</option>
+                <option>Los Angeles (LAX)</option>
+                <option>Osamis (OZC)</option>
+                <option>Puerto Princesa City (PPS)</option>
+                <option>Riyadh (RUH)</option>
+                <option>Roxas City (RXS)</option>
+                <option>San Francisco (SFO)</option>
+                <option>Singapore (SIN)</option>
+                <option>Seoul (ICN)</option>
+                <option>Sydney (SYD)</option>
+                <option>Tacloban (TAC)</option>
+                <option>Taipei (TPE)</option>
+                <option>Tokyo (NRT)</option>
+                <option>Tuguegarao (TUG)</option>
+                <option>Vancouver (VYR)</option>
+                <option>Xiamen (XMN)</option>
+                <option>Zamboanga (ZAM)</option>
+            </select>
+            <label for="to">Going to</label>
+            <select name="to" required>
+                <option>Select destination</option>
+                <option>Manila (MNL)</option>
+                <option>Abu Dhabi (AUH)</option>
+                <option>Bacolod City (BCD)</option>
+                <option>Bangkok (BKK)</option>
+                <option>Basco (BSO)</option>
+                <option>Busuanga (USU)</option>
+                <option>Butuan (BXU)</option>
+                <option>Cagayan De Oro (CGY)</option>
+                <option>Catarman (CRM)</option>
+                <option>Caticlan (MPH)</option>
+                <option>Cebu (CEB)</option>
+                <option>Davao City (DVO)</option>
+                <option>Denpasar (DPS)</option>
+                <option>Dipolog (DPL)</option>
+                <option>Dubai (DXB)</option>
+                <option>General Santos (GES)</option>
+                <option>Guam (GUM)</option>
+                <option>Hong Kong (HKG)</option>
+                <option>Iloilo (ILO)</option>
+                <option>Jakarta (JRK)</option>
+                <option>Kalibo (KLO)</option>
+                <option>Kuala Lumpur (KUL)</option>
+                <option>Kuwait City (KWI)</option>
+                <option>Legazpi (DRP)</option>
+                <option>Los Angeles (LAX)</option>
+                <option>Osamis (OZC)</option>
+                <option>Puerto Princesa City (PPS)</option>
+                <option>Riyadh (RUH)</option>
+                <option>Roxas City (RXS)</option>
+                <option>San Francisco (SFO)</option>
+                <option>Singapore (SIN)</option>
+                <option>Seoul (ICN)</option>
+                <option>Sydney (SYD)</option>
+                <option>Tacloban (TAC)</option>
+                <option>Taipei (TPE)</option>
+                <option>Tokyo (NRT)</option>
+                <option>Tuguegarao (TUG)</option>
+                <option>Vancouver (VYR)</option>
+                <option>Xiamen (XMN)</option>
+                <option>Zamboanga (ZAM)</option>
+            </select>
+            <label for="depart">Depart</label>
+            <input type="date" name="depart" required>
+            <label for="return">Return</label>
+            <input type="date" name="return">
+            <label for="class">Class</label>
+            <select name="class" required>
+                <option>First Class</option>
+                <option>Business Class</option>
+                <option>Economy Plus</option>
+                <option>Economy</option>
+            </select>
+            <label for="passenger-count">Passengers</label>
+            <input type="number" name="passenger-count" value="1" min="1" required>
+            <input type="submit" value="Find and Book">
+        </form>
+    </div>
+</body>
+</html>

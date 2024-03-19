@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Booking</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(https://cloudfront-us-east-2.images.arcpublishing.com/reuters/Q2TXDVIDXBKSPIQEKQC6USDU7A.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: #003a63;
+        }
+        h4 {
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        div.preference_container {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .preference {
+            padding: 5px;
+        }
+        p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        div.flight {
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        p.route {
+            text-align: left;
+            padding: 0;
+
+        }
+        div.route {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            font-weight: bold;
+        }
+        .flag_ph, .flag_us {
+            height: 20px;
+            margin-right: 5px;
+        }
+        .flag_us {
+            margin-left: 5px;
+        }
+        .flight_info {
+            text-align: left;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Flights</h1>
+        <h4>These are the available flights according to your specified preference.</h4>
+        <div class="preference_container">
+            <p class="preference_">MNL → LAX</p>
+            <p class="preference">|</p>
+            <p class="preference">Depart at Sat, Mar 2</p>
+            <p class="preference">|</p>
+            <img class="preference" src="https://cdn-icons-png.flaticon.com/128/14908/14908789.png" width="12px">
+            <p class="preference">1</p>
+
+        </div>
+
+        <a href="https://flights.philippineairlines.com/en/flights-to-los-angeles" target="_parent">
+            <div class="flight">
+                <div class="route">
+                    <img class="flag_ph" src="https://cdn.countryflags.com/thumbs/philippines/flag-400.png">
+                    <p class="route">MNL → </p>
+                    <img class="flag_us" src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png">
+                    <p class="route">LAX</p>
+                </div>
+                <p class="flight_info"><b>Departure: </b>MAR 2, 2024 NAIA 1<br>
+                <b>Flight Number: </b>RP-C5910<br>
+                <b>Type: </b>Airbus A321-123<br>
+                </p>
+            </div>
+            <div class="flight">
+                <div class="route">
+                    <img class="flag_ph" src="https://cdn.countryflags.com/thumbs/philippines/flag-400.png">
+                    <p class="route">MNL → </p>
+                    <img class="flag_us" src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png">
+                    <p class="route">LAX</p>
+                </div>
+                <p class="flight_info"><b>Departure: </b>MAR 2, 2024 NAIA 3<br>
+                <b>Flight Number: </b>RP-C5230<br>
+                <b>Type: </b>Boeing 777-31(ER)<br>
+                </p>
+            </div>
+            <div class="flight">
+                <div class="route">
+                    <img class="flag_ph" src="https://cdn.countryflags.com/thumbs/philippines/flag-400.png">
+                    <p class="route">MNL → </p>
+                    <img class="flag_us" src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png">
+                    <p class="route">LAX</p>
+                </div>
+                <p class="flight_info"><b>Departure: </b>MAR 2, 2024 NAIA 3<br>
+                <b>Flight Number: </b>RP-C1290<br>
+                <b>Type: </b>Boeing 747SP<br>
+                </p>
+            </div>
+            <div class="flight">
+                <div class="route">
+                    <img class="flag_ph" src="https://cdn.countryflags.com/thumbs/philippines/flag-400.png">
+                    <p class="route">MNL → </p>
+                    <img class="flag_us" src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png">
+                    <p class="route">LAX</p>
+                </div>
+                <p class="flight_info"><b>Departure: </b>MAR 2, 2024 NAIA 1<br>
+                <b>Flight Number: </b>RP-C5230<br>
+                <b>Type: </b>Boeing 777-36N(ER)<br>
+                </p>
+            </div>
+            <div class="flight">
+                <div class="route">
+                    <img class="flag_ph" src="https://cdn.countryflags.com/thumbs/philippines/flag-400.png">
+                    <p class="route">MNL → </p>
+                    <img class="flag_us" src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png">
+                    <p class="route">LAX</p>
+                </div>
+                <p class="flight_info"><b>Departure: </b>MAR 2, 2024 NAIA 2<br>
+                <b>Flight Number: </b>RP-C0121<br>
+                <b>Type: </b>Airbus A330-343<br>
+                </p>
+            </div>
+            <div class="flight">
+                <div class="route">
+                    <img class="flag_ph" src="https://cdn.countryflags.com/thumbs/philippines/flag-400.png">
+                    <p class="route">MNL → </p>
+                    <img class="flag_us" src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png">
+                    <p class="route">LAX</p>
+                </div>
+                <p class="flight_info"><b>Departure: </b>MAR 2, 2024 NAIA 2<br>
+                <b>Flight Number: </b>RP-C2419<br>
+                <b>Type: </b>Boeing 757-223(PCF)<br>
+                </p>
+            </div>
+        </a>
+    </div>
+</body>
+</html>

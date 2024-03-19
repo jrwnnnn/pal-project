@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Bahnschrift;
+    src: url(../assets/fonts/bahnschrift.TTF);
+}
+@font-face {
+    font-family: Product Sans;
+    src: url(../assets/fonts/product_sans.ttf);
+}
+body {
+    background-image: url(https://www.philippineairlines.com/en/newsevent-listingpage/press-releases-statements/-/media/10efa199f02f41808e6e1939dfc831d3.ashx?h=450&w=600);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    color: #FFFFFF;
+    font-family: Bahnschrift, sans-serif;
+    background-color: #042B67;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+.nav_logo_container {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 400px;
+}
+.nav_logo {
+    width: 60px;
+    padding-right: 10px;
+}
+.nav_logo_text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+}
+div.nav_link_container {
+    display: flex;
+    justify-content: center;
+}
+.nav_link_container div {
+    padding: 0 11px;
+}
+a.nav_link {
+    color: #FFFFFF;
+    font-size: 1.125rem;
+    text-decoration: none;
+}
+a.nav_link:hover {
+    text-decoration: underline;
+}
+
+div.main_body {
+    padding: 0 15vw;
+}
+
+.heading {
+    font-family: Bahnschrift,  sans-serif;
+    font-size: 3.4rem;
+    text-align: center;
+}
+.subheading {
+    font-family: Product Sans, sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+/* Find Flight Home */
+
+.find_flight_container {
+    background-color: #FFFFFF;
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+.find_flight_form {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2fr 2fr 1fr;
+    gap: 1.5rem;
+}
+.find_flight_form_button {
+    grid-column: span 3;
+}
+.input_set {
+    width: 100%;
+}
+.input_set label {
+    font-family: Product Sans, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+.input_set select,
+.input_set input {
+    font-family: Product Sans, sans-serif;
+    font-size: 1rem;
+    border: 1px  solid #042B67;
+    border-radius: .5rem;
+    padding: 0.75rem;
+    width: 100%;
+    box-sizing: border-box; 
+}
+.find_flight_form_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.find_flight_form_button input[type="submit"] {
+    color: #ffffff;
+    font-family: Product Sans, sans-serif;
+    font-size: 1rem;
+    background-color: #042B67;
+    border: none;
+    border-radius: .5rem;
+    padding: 0.75rem 20%;
+}
+
+@media screen and (max-width: 786px) {
+    .heading {
+        font-size: 2.4rem;
+    }
+    .subheading {
+        font-size: 1.1rem;
+    }
+    .find_flight_form {
+      grid-template-columns: 1fr;
+    }
+    .find_flight_form_button {
+        grid-column: span 1;
+    }
+  }
+@media screen and (max-width: 500px) {
+    div.main_body {
+        padding: 0 5vw;
+    }
+}
