@@ -65,7 +65,7 @@ div.body_padding {
 }
 
 .top_section {
-    background-image: url(https://www.philippineairlines.com/en/newsevent-listingpage/press-releases-statements/-/media/10efa199f02f41808e6e1939dfc831d3.ashx?h=450&w=600);
+    background-image: url(https://cdn.discordapp.com/attachments/978853060476563466/1219986700147621921/image-031.jpg?ex=660d4c27&is=65fad727&hm=30cd853ff3517b1fa1705deb69fdedea3f7b669079397a34cfc60f67bd995d6a&);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -144,7 +144,7 @@ div.body_padding {
 
 @media screen and (max-width: 786px) {
     .heading {
-        font-size: 2.4rem;
+        font-size: 2.5rem;
     }
     .subheading {
         font-size: 1.1rem;
@@ -173,9 +173,15 @@ div.body_padding {
     grid-column-start: 1;
 }
 .discover_ph_text {
+    color: #FFFFFF;
     letter-spacing: .5rem;
     font-size: 1.75rem;
     justify-self: center;
+}
+@media screen and (max-width: 786px) {
+    .discover_ph_text p {
+        font-size: 2.3rem;
+    }
 }
 
 .discover_manila,
@@ -255,8 +261,14 @@ div.body_padding {
     width: 50vw;
     justify-self: center;
     margin-bottom: 1rem;
+    /* grid-column: span 2; */
 }
-.video_section div p[class="video_section_text_heading"] {
+@media screen and (max-width: 786px) {
+    .video_section div img {
+        width: 100%;
+    }
+}
+/* .video_section div p[class="video_section_text_heading"] {
     font-family: Bahnschrift;
     font-size: 1.80rem;
     font-weight: bold;
@@ -269,8 +281,67 @@ div.body_padding {
     text-align: center;
     margin: 0;
     margin-bottom: 1rem;
-}
+} */
 .video_section div video {
     width: 100%;
     border-radius: .5rem;
+}
+
+.cards_section {
+    background-color: #FFFFFF;
+    padding: 10vh 0;
+}
+.cards_section div.body_padding {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+@media screen and (max-width: 768px) {
+    .cards_section div.body_padding {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+.cards_section_heading {
+    color: #042B67;
+    font-family: Product Sans;
+    font-size: 1.50rem;
+    text-align: center;
+    letter-spacing: 1rem;
+    grid-column: span 3;
+    justify-self: center;
+}
+@media screen and (max-width: 768px) {
+    .cards_section_heading {
+        grid-column: span 1;
+    }
+}
+.card {
+    background-color: #eeeeee;
+    border-radius: .5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem .5rem 0rem 0rem;
+}
+.card_header {
+    font-family: Bahnschrift;
+    font-size: 1.40rem;
+    font-weight: bold;
+}
+.card_description {
+    color: #262626;
+    font-family: Product Sans;
+    font-size: 1rem;
+    margin: 0;
+}
+.learn_more {
+    color: #042B67;
+    font-family: Product Sans;
+    font-size: 1rem;
+    margin: .5rem 0 .25rem 0;
 }
