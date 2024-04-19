@@ -63,6 +63,7 @@ div.body_padding {
     background-repeat: no-repeat;
     background-size: cover;
     height: 40vh;
+    margin-bottom: 2rem;
 }
 .top_text{
     font-size: .75rem;
