@@ -12,7 +12,7 @@ A Philippine Airlines themed website. Computer Programming NCII subject requirem
 > Project Status: Active <br>
 > Hosting Status: Active <br>
 ### How to use
-View the website by visiting [jrwnnnn.github.io](https://jrwnnnn.github.io) running `homepage.html` at `pages` folder. The whole website is still in development which means some part of it may not work as expected.
+View the website by visiting [jrwnnnn.github.io](https://jrwnnnn.github.io) or running `homepage.html` at `pages` folder. The whole website is still in development which means some part of it may not work as expected.
 
 ### Note
 This project is entirely for school purposes only and is not affiliated by Philippine Airlines at any forms.

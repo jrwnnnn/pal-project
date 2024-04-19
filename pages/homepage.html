@@ -3,6 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function(){
+    
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+        });
+        } // End if
+    });
+    });
+    </script>
     <link rel="stylesheet" href="../stylesheets/homepage.css">
     <link rel="icon" href="https://cdn.discordapp.com/attachments/978853060476563466/1212389948741783563/image.png?ex=66041e20&is=65f1a920&hm=844ef3e0c4c77c4725bdd875db8b74bbf9e366d00cfbb730c877cf6adf0f47a3&">
     <title>Philippine Airlines</title>
@@ -15,10 +42,9 @@
             <p class="nav_logo_text"><i>Philippine Airlines</i></p>
         </div>    
         <div class="nav_link_container">
-            <div><a href="homepage.html" class="nav_link">Book</a></div>
-            <div><a href="booking/body.html" class="nav_link">Manage</a></div>
-            <div><a href="https://www.philippineairlines.com/explore-our-destinations" class="nav_link">Explore</a></div>
-            <div><a href="https://www.philippineairlines.com/en/pals-story/the-airline-in-a-nutshell" class="nav_link">About PAL</a></div>
+            <div><a href="#discover_ph" class="nav_link">Explore</a></div>
+            <div><a href="#cards_section" class="nav_link">Travel Guide</a></div>
+            <div><a href="about_pal.html" class="nav_link">About PAL</a></div>
             <div><a href="https://www.philippineairlines.com/en/about-us/contact-us/global-reservation-hotline" class="nav_link">Help and Support</a></div>
         </div>
     </nav>
@@ -32,12 +58,91 @@
                         <label id="from">Departing Airport</label>
                         <select id="from" required>
                             <option>Manila (MNL)</option>
+                            <option>Abu Dhabi (AUH)</option>
+                            <option>Bacolod City (BCD)</option>
+                            <option>Bangkok (BKK)</option>
+                            <option>Basco (BSO)</option>
+                            <option>Busuanga (USU)</option>
+                            <option>Butuan (BXU)</option>
+                            <option>Cagayan De Oro (CGY)</option>
+                            <option>Catarman (CRM)</option>
+                            <option>Caticlan (MPH)</option>
+                            <option>Cebu (CEB)</option>
+                            <option>Davao City (DVO)</option>
+                            <option>Denpasar (DPS)</option>
+                            <option>Dipolog (DPL)</option>
+                            <option>Dubai (DXB)</option>
+                            <option>General Santos (GES)</option>
+                            <option>Guam (GUM)</option>
+                            <option>Hong Kong (HKG)</option>
+                            <option>Iloilo (ILO)</option>
+                            <option>Jakarta (JRK)</option>
+                            <option>Kalibo (KLO)</option>
+                            <option>Kuala Lumpur (KUL)</option>
+                            <option>Kuwait City (KWI)</option>
+                            <option>Legazpi (DRP)</option>
+                            <option>Los Angeles (LAX)</option>
+                            <option>Osamis (OZC)</option>
+                            <option>Puerto Princesa City (PPS)</option>
+                            <option>Riyadh (RUH)</option>
+                            <option>Roxas City (RXS)</option>
+                            <option>San Francisco (SFO)</option>
+                            <option>Singapore (SIN)</option>
+                            <option>Seoul (ICN)</option>
+                            <option>Sydney (SYD)</option>
+                            <option>Tacloban (TAC)</option>
+                            <option>Taipei (TPE)</option>
+                            <option>Tokyo (NRT)</option>
+                            <option>Tuguegarao (TUG)</option>
+                            <option>Vancouver (VYR)</option>
+                            <option>Xiamen (XMN)</option>
+                            <option>Zamboanga (ZAM)</option>
                         </select>
                     </div>
                     <div class="input_set">
                         <label id="to">Arrival Airport</label>
                         <select id="to" required>
+                            <option>Select destination</option>
                             <option>Manila (MNL)</option>
+                            <option>Abu Dhabi (AUH)</option>
+                            <option>Bacolod City (BCD)</option>
+                            <option>Bangkok (BKK)</option>
+                            <option>Basco (BSO)</option>
+                            <option>Busuanga (USU)</option>
+                            <option>Butuan (BXU)</option>
+                            <option>Cagayan De Oro (CGY)</option>
+                            <option>Catarman (CRM)</option>
+                            <option>Caticlan (MPH)</option>
+                            <option>Cebu (CEB)</option>
+                            <option>Davao City (DVO)</option>
+                            <option>Denpasar (DPS)</option>
+                            <option>Dipolog (DPL)</option>
+                            <option>Dubai (DXB)</option>
+                            <option>General Santos (GES)</option>
+                            <option>Guam (GUM)</option>
+                            <option>Hong Kong (HKG)</option>
+                            <option>Iloilo (ILO)</option>
+                            <option>Jakarta (JRK)</option>
+                            <option>Kalibo (KLO)</option>
+                            <option>Kuala Lumpur (KUL)</option>
+                            <option>Kuwait City (KWI)</option>
+                            <option>Legazpi (DRP)</option>
+                            <option>Los Angeles (LAX)</option>
+                            <option>Osamis (OZC)</option>
+                            <option>Puerto Princesa City (PPS)</option>
+                            <option>Riyadh (RUH)</option>
+                            <option>Roxas City (RXS)</option>
+                            <option>San Francisco (SFO)</option>
+                            <option>Singapore (SIN)</option>
+                            <option>Seoul (ICN)</option>
+                            <option>Sydney (SYD)</option>
+                            <option>Tacloban (TAC)</option>
+                            <option>Taipei (TPE)</option>
+                            <option>Tokyo (NRT)</option>
+                            <option>Tuguegarao (TUG)</option>
+                            <option>Vancouver (VYR)</option>
+                            <option>Xiamen (XMN)</option>
+                            <option>Zamboanga (ZAM)</option>
                         </select>
                     </div>
                     <div class="input_set">
@@ -56,6 +161,9 @@
                         <label id="flight_class">Class</label>
                         <select id="flight_class" required">
                             <option>First Class</option>
+                            <option>Business Class</option>
+                            <option>Economy Plus</option>
+                            <option>Economy</option>
                         </select>
                     </div>
                     <div class="find_flight_form_button">
@@ -65,9 +173,9 @@
             </div>
         </div>
     </div>
-    <div class="discover_ph">
+    <div id="discover_ph">
         <video muted loop autoplay>
-            <source src="https://cdn.discordapp.com/attachments/978853060476563466/1219629186113732699/VN20240319_1756311_1.mp4?ex=660bff31&is=65f98a31&hm=5623370c7ae9d1a5a9ae1d3e7f358ea5b2db38fe946eb730905b42595434d367&">
+            <source src="https://cdn.discordapp.com/attachments/978853060476563466/1219629186113732699/VN20240319_1756311_1.mp4?ex=6630e931&is=661e7431&hm=612020602c474b9d5d3e43f7234d822cd9bbd2f567e64ff27d3735edc0111a32&">
         </video>
         <div class="body_padding">
             <div class="discover_text_container discover_ph_text">
@@ -114,32 +222,41 @@
             </div> -->
         </div>
     </div>
-    <div class="cards_section">
+    <div id="cards_section">
         <div class="body_padding">
             <p class="cards_section_heading">PAL TRAVEL GUIDE</p>
             <div class="card">
                 <img src="https://www.philippineairlines.com/-/media/files/historyandmilestonespalsstory/nutshell-copy.jpg?h=313&w=454">
                 <p class="card_header">PAL Experience</p>
                 <p class="card_description">We strive to make every single journey special, and help you feel relaxed and secure from airport to boarding and beyond.</p>
-                <a class="learn_more" href="">Learn more</a>
+                <a class="learn_more" href="pal_experience.html">Take a tour</a>
             </div>
             <div class="card">
                 <img src="https://d1bv4heaa2n05k.cloudfront.net/posts%2F93iKwZoYHbSZ7QmMF%2F1658748071742-shutterstock_1568380735.jpg">
                 <p class="card_header">Mabuhay Miles</p>
                 <p class="card_description">Philippine Airlines' frequent flyer program makes it more than just the skies for you</p>
-                <a class="learn_more" href="">Learn more</a>
+                <a class="learn_more" href="mabuhay_miles.html">Learn more</a>
             </div>
             <div class="card">
                 <img src="https://cdn.discordapp.com/attachments/978853060476563466/1219977671010943067/DXP8NWBU8AAlq5k.jpg?ex=660d43be&is=65facebe&hm=ecf213505a3506328392b35df8240e0531414d50ad5fbc6bd08ed002a0c2c34b&">
                 <p class="card_header">Sustainability</p>
                 <p class="card_description">With a focus on people, planet and responsible business, we’re transforming our airline for a more sustainable future.</p>
-                <a class="learn_more" href="">Learn more</a>
+                <a class="learn_more" href="">Discover out vision</a>
             </div>
         </div>
     </div>
-    <!-- <div class="footer">
+    <div class="footer_section">
+        <div class="body_padding">
+            <div class="social_links">
+                <a href="https://twitter.com/flyPAL" target="_blank"><img alt="twitter" src="https://cdn-icons-png.flaticon.com/512/733/733635.png"></a>
+                <a href="https://www.facebook.com/PhilippineAirlines" target="_blank"><img alt="facebook" src="https://cdn-icons-png.flaticon.com/512/59/59439.png"></a>
+                <a href="https://www.instagram.com/flypal/" target="_blank"><img alt="instagram" src="https://cdn-icons-png.flaticon.com/512/87/87390.png"></a>
+            </div>
+            <div class="bottom_footer">
+                <img alt="pal_icon" src="../assets/image/pal_icon.png">
+                <p>&copy; 2024 Philippine Airlines</p>
+            </div>
+        </div>
     </div>
-
-    </div> -->
 </body>
 </html>
