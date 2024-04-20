@@ -266,7 +266,7 @@ div.body_padding {
         width: 100%;
     }
 }
-/* .video_section div p[class="video_section_text_heading"] {
+.video_section div p[class="video_section_text_heading"] {
     font-family: Bahnschrift;
     font-size: 1.80rem;
     font-weight: bold;
@@ -279,7 +279,7 @@ div.body_padding {
     text-align: center;
     margin: 0;
     margin-bottom: 1rem;
-} */
+}
 .video_section div video {
     width: 100%;
     border-radius: .5rem;

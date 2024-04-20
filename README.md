@@ -9,7 +9,6 @@ mySQL: https://upload.wikimedia.org/wikipedia/labs/8/8e/Mysql_logo.png
 
 A Philippine Airlines themed website. Computer Programming NCII subject requirement. <br>
 **Programmed and published on GitHub by Mark Jerwin [(@jrwnnnn)](https://github.com/jrwnnnn).** <br>
-> Project Status: Active <br>
 > Hosting Status: Active <br>
 ### How to use
 View the website by visiting [jrwnnnn.github.io](https://jrwnnnn.github.io) or running `homepage.html` at `pages` folder. The whole website is still in development which means some part of it may not work as expected.

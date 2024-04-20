@@ -4,24 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        if (window.innerWidth <= 786) {
-            window.location.replace("../index.html");
-        }
-        $(document).ready(function(){
-            $("a").on('click', function(event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    var hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function(){
-                window.location.hash = hash;
-                });
-                }
-            });
-        });
-    </script>
+    <script src="../script/homepage.js"></script>
     <link rel="stylesheet" href="../stylesheets/homepage.css">
     <link rel="icon" href="https://cdn.discordapp.com/attachments/978853060476563466/1212389948741783563/image.png?ex=66041e20&is=65f1a920&hm=844ef3e0c4c77c4725bdd875db8b74bbf9e366d00cfbb730c877cf6adf0f47a3&">
     <title>Philippine Airlines</title>
@@ -45,7 +28,7 @@
             <h1 class="heading"> EXPERIENCE THE HEART OF THE FILIPINO </h1>
             <p class="subheading">Hospitality that's proactive and selfless, and a disposition and attitude that's resilient and always cheerful, is what sets Philippine Airlines apart from its competition as the airline with #MoreHeart.</p>
             <div class="find_flight_container">
-                <form class="find_flight_form" action="">
+                <form class="find_flight_form" action="sign_in.html">
                     <div class="input_set">
                         <label id="from">Departing Airport</label>
                         <select id="from" required>
@@ -205,13 +188,13 @@
     <div class="video_section">
         <div class="body_padding">
             <img src="../assets/image/75_logo.png">
-            <video autoplay muted loop controls>
-                <source src="https://cdn.discordapp.com/attachments/978853060476563466/1212586454702882826/PAL.mp4?ex=6632f9a3&is=662084a3&hm=9009e45fb81f34e41760ab78d52f5d883b8aa24de223f1f5af037781ebbfd4ea&">
-            </video>
             <div class="video_section_text_container">
                 <p class="video_section_text_heading">THE HEART OF THE FILIPINO SHINING THROUGH FOR 75 YEARS</p>
                 <p class="video_section_text_subheading">For 75 years, Philippine Airlines has connected hearts across the globe, carrying the warmth and resilience of the Filipino spirit with every flight. We've carried them to new beginnings, brought families together, and filled skies with the warmth of Filipino hospitality. </p>
             </div>
+            <video autoplay muted loop controls>
+                <source src="https://cdn.discordapp.com/attachments/978853060476563466/1212586454702882826/PAL.mp4?ex=6632f9a3&is=662084a3&hm=9009e45fb81f34e41760ab78d52f5d883b8aa24de223f1f5af037781ebbfd4ea&">
+            </video>
         </div>
     </div>
     <div id="cards_section">

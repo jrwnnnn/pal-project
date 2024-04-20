@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="../stylesheets/sign_up_log_in.css">
+  <link rel="icon" href="../assets/image/pal_icon.png">
+  <script src="../script/signup.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="left-side">
+      <img src="../assets/image/logo_w_text.png" alt="Philippine Airlines Logo">
+     <div class ="left-side-p"> 
+      <h1>Mabuhay!</h1>
+      <p>Experience the heart of the Filipino, only here at Philippine Airlines. </p>
+      <footer>Have an account? <a href="sign_in.html">Sign in</a></footer>
+    </div>
+    </div>
+    <div class="right-side">
+        <div class="right-side">
+            <form action="sign_in.html" method="POST" class="signup-form" id="signupForm">
+              <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" class="small-input" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="small-input" required>
+              </div>
+              <div class="form-group">
+                <label for="newPassword">Password:</label>
+                <input type="password" id="newPassword" name="newPassword" class="small-input" required>
+              </div>
+              <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" class="small-input" required>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="login-button">Sign Up</button>
+              </div>
+            </form>
+    </div>
+  </div>
+  <script src="signup.js"></script>
+</body>
+</html>
