@@ -8,7 +8,7 @@ mySQL: https://upload.wikimedia.org/wikipedia/labs/8/8e/Mysql_logo.png
 -->
 
 A Philippine Airlines themed website. Computer Programming NCII subject requirement. <br>
-**Programmed and published on GitHub by Mark Jerwin [(@jrwnnnn)](https://github.com/jrwnnnn).** <br>
+**Programmed and published on GitHub by Mark Jerwin [(@jrwnnnn)](https://github.com/jrwnnnn) and his team.** <br>
 > Hosting Status: Active <br>
 > Project Status: Finished <br>
 [![Netlify Status](https://api.netlify.com/api/v1/badges/55a24d87-6b66-4995-a477-d83aee872851/deploy-status)](https://pal-projectj21.netlify.app/)<br>
